@@ -1,0 +1,20 @@
+<launch>
+  <!-- Launching the webcam publisher -->
+  <node
+    pkg="cv_basics"
+    type="webcam_pub.py"
+    name="webcam_pub"
+    output="screen">
+  </node>
+
+  <!-- Launching the webcam subscriber -->
+  <node
+    pkg="cv_basics"
+    type="webcam_sub.py"
+    name="webcam_sub"
+    output="screen">
+  </node>
+
+  
+</launch>
+
